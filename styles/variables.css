@@ -1,8 +1,33 @@
 :root {
-  --text-h1: 65px;
-  --text-subtitles: 23px;
-  --text-primary: 18px;
+  --content-width: clamp(320px, 90vw, 700px);
+
+  --font-primary: 'Inter', sans-serif;
+  --font-accent: 'Press Start';
+
+  --font-size-h1: clamp(49px, 6vw, 65px);
+  --font-size-subtitles: 18px;
+  --font-size-primary: 18px;
+
+  --font-weight-regular: 410;
+  --font-weight-bold: 715;
 
   --color-primary: #000000;
   --color-secondary: #FFFFFF;
+
+  --page-gradient:
+    repeating-linear-gradient(to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px),
+
+    repeating-linear-gradient(to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px),
+
+    linear-gradient(to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%);
 }

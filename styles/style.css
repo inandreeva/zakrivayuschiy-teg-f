@@ -13,4 +13,111 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: clamp(40px, 8vw, 100px);
+  gap: 50px;
+
+  background-image: var(--page-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+  font-variation-settings: 'wght' var(--font-weight-regular);
+
+}
+
+.content {
+  display: grid;
+  gap: 50px;
+  justify-items: center;
+}
+
+.card,
+.header {
+  inline-size: var(--content-width);
+  background-color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  block-size: 368px;
+}
+
+.header__title {
+  font-family: var(--font-accent);
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-regular);
+}
+
+.header__subtitle {
+  font-size: var(--font-size-subtitles);
+  font-family: var(--font-accent);
+  font-weight: var(--font-weight-regular);
+  margin-top: 20px;
+}
+
+.card__title {
+  font-family: var(--font-accent);
+  font-size: var(--font-size-primary);
+  font-weight: var(--font-weight-bold);
+  padding: 4px 10px;
+}
+
+.card__image-wrapper {
+  position: relative;
+  inline-size: 100%;
+}
+
+.card__image {
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-block: 2px solid var(--color-primary);
+  border-inline: 0;
+}
+
+.card__decor {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 14px;
+  color: white;
+}
+
+.card__text {
+  padding: 25px;
+}
+
+.card__like-group {
+  padding: 25px;
+}
+
+.like-icon {
+  width: 27px;
+  height: 24px;
+}
+
+.button {
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-secondary);
+  padding: 12px 37px;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
 }
