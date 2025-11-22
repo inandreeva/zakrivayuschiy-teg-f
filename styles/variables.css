@@ -5,7 +5,7 @@
   --font-accent: 'Press Start';
 
   --font-size-h1: clamp(49px, 6vw, 65px);
-  --font-size-subtitles: 18px;
+  --font-size-subtitles: clamp(0.875rem, 0.1719rem + 2.25vw, 1.4375rem);
   --font-size-primary: 18px;
 
   --font-weight-regular: 410;
@@ -13,6 +13,7 @@
 
   --color-primary: #000000;
   --color-secondary: #FFFFFF;
+  --decor-stroke-color: var(--color-secondary);
 
   --page-gradient:
     repeating-linear-gradient(to right,

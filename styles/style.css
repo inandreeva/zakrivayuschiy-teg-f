@@ -18,7 +18,6 @@
   flex-direction: column;
   align-items: center;
   padding-block: clamp(40px, 8vw, 100px);
-  gap: 50px;
 
   background-image: var(--page-gradient);
   background-attachment: fixed;
@@ -27,7 +26,6 @@
   font-family: var(--font-primary);
   color: var(--color-primary);
   font-variation-settings: 'wght' var(--font-weight-regular);
-
 }
 
 .content {
@@ -49,25 +47,27 @@
 
 .header {
   block-size: 368px;
+  margin-block-end: 98px;
 }
 
 .header__title {
   font-family: var(--font-accent);
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
 }
 
 .header__subtitle {
   font-size: var(--font-size-subtitles);
   font-family: var(--font-accent);
-  font-weight: var(--font-weight-regular);
+  font-weight: 400;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .card__title {
-  font-family: var(--font-accent);
+  font-family: var(--font-primary);
   font-size: var(--font-size-primary);
-  font-weight: var(--font-weight-bold);
   padding: 4px 10px;
 }
 
@@ -89,21 +89,53 @@
   position: absolute;
   top: 25px;
   right: 25px;
+
+  font-family: var(--font-accent);
   font-size: 14px;
-  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+
+  color: var(--color-primary);
+  text-shadow:
+    1px 0 0 var(--decor-stroke-color),
+    -1px 0 0 var(--decor-stroke-color),
+    0 1px 0 var(--decor-stroke-color),
+    0 -1px 0 var(--decor-stroke-color);
+}
+
+@supports (-webkit-text-stroke: 1px var(--decor-stroke-color)) or (text-stroke: 1px var(--decor-stroke-color)) {
+  .card__decor {
+    -webkit-text-stroke: 1px var(--decor-stroke-color);
+    text-stroke: 1px var(--decor-stroke-color);
+    text-shadow: none;
+  }
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
 }
 
 .card__text {
-  padding: 25px;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-primary);
+  line-height: 21px;
 }
 
 .card__like-group {
-  padding: 25px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.like-icon {
-  width: 27px;
-  height: 24px;
+.card__icon-button {
+  background-color: transparent;
+  border: none;
 }
 
 .button {
@@ -115,9 +147,19 @@
   cursor: pointer;
 }
 
+.footer {
+  margin-block-start: 50px;
+}
+
 .footer__button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 3px;
+  gap: 8px;
+  min-width: 344px;
+  padding: 17px 20px;
+}
+
+.footer__button_icon {
+  max-width: 21px;
 }
