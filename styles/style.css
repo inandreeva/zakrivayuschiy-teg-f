@@ -60,7 +60,7 @@
 
 .content {
   display: grid;
-  gap: 47px;
+  gap: 45px;
 }
 
 .card__title {
@@ -119,7 +119,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 24px 25px 21px 25px;
+  padding: 25px 25px 22px 25px;
 }
 
 .card__text {
@@ -133,6 +133,8 @@
   display: flex;
   justify-content: flex-end;
   gap: 2px;
+  margin-block-end: 25px;
+  margin-inline-end: 25px;
 }
 
 .card__icon-button {
@@ -150,7 +152,7 @@
 }
 
 .footer {
-  margin-block-start: 50px;
+  margin-block-start: 39px;
 }
 
 .footer__button {
@@ -159,7 +161,7 @@
   align-items: center;
   gap: 8px;
   min-width: 344px;
-  padding: 17px 20px;
+  padding: 20px 21px;
 }
 
 .footer__button_icon {
