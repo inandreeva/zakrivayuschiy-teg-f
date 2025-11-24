@@ -282,4 +282,8 @@
     max-width: 28px;
     max-height: 28px;
   }
+
+  .footer__dialog {
+    inline-size: 341px;
+  }
 }
