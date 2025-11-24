@@ -176,12 +176,41 @@
 }
 
 .button {
+  position: relative;
   border: 2px solid var(--color-primary);
   background-color: var(--color-secondary);
   padding: 10px 36px;
   font-family: var(--font-accent);
   font-size: 14px;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 0 var(--color-primary);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--color-secondary);
+  mix-blend-mode: difference;
 }
 
 .footer {
@@ -201,6 +230,11 @@
 .footer__button_icon {
   max-width: 21px;
   max-height: 21px;
+
+  position: relative;
+  z-index: 1;
+  color: var(--color-secondary);
+  mix-blend-mode: difference;
 }
 
 .footer__dialog-button {
