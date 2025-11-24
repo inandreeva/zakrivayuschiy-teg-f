@@ -27,7 +27,11 @@
           </h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image zero-sprint"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -76,7 +80,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -88,7 +92,11 @@
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image first-sprint-start"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -139,7 +147,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button>
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -151,7 +159,11 @@
           <h2 class="card__title">1 спринт: А если не получится?</h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image first-sprint-end"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -200,7 +212,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -212,7 +224,11 @@
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image second-sprint-start"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -263,7 +279,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -275,7 +291,11 @@
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image second-sprint-end"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -327,7 +347,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -339,7 +359,11 @@
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image third-sprint-start"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -388,7 +412,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -400,7 +424,11 @@
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image third-sprint-end"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -451,7 +479,7 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -463,7 +491,11 @@
           <h2 class="card__title">«Сейчас я здесь»</h2>
 
           <div class="card__image-wrapper">
-            <img src="./images/image.png" alt="" class="card__image" />
+            <img
+              src="./images/image.png"
+              alt=""
+              class="card__image fourth-sprint-start"
+            />
             <span class="card__decor">&lt;/HTML&gt;</span>
           </div>
 
@@ -516,20 +548,38 @@
                 </defs>
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text">Like</span>
             </button>
           </div>
         </div>
       </section>
     </main>
+
     <footer class="footer">
-      <button class="footer__button button">
+      <button
+        class="footer__button button"
+        type="button"
+        onclick="window['footer-dialog'].showModal()"
+      >
         <svg class="footer__button_icon" viewBox="0 0 21 21">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="footer__button_text">Сохранить на память</span>
+        <span class="button__text">Сохранить на память</span>
       </button>
+
+      <dialog id="footer-dialog" class="footer__dialog">
+        <svg class="footer__button_icon-big" viewBox="0 0 21 21">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p>Вставьте дискету, чтобы продолжить</p>
+        <button
+          class="footer__button button"
+          onclick="window['footer-dialog'].close()"
+        >
+          <span class="button__text">OK</span>
+        </button>
+      </dialog>
     </footer>
   </body>
 </html>
