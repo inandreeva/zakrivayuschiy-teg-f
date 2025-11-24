@@ -14,6 +14,7 @@
   --color-primary: #000000;
   --color-secondary: #FFFFFF;
   --decor-stroke-color: var(--color-secondary);
+  --animation-fill-color: #ff0000;
 
   --page-gradient:
     repeating-linear-gradient(to right,

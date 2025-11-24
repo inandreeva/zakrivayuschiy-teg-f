@@ -63,6 +63,7 @@
   gap: 45px;
 }
 
+/* sections */
 .card__title {
   font-family: var(--font-primary);
   font-size: var(--font-size-primary);
@@ -162,17 +163,13 @@
   line-height: 21px;
 }
 
+/* button */
 .card__like-group {
   display: flex;
   justify-content: flex-end;
   gap: 2px;
   margin-block-end: 25px;
   margin-inline-end: 25px;
-}
-
-.card__icon-button {
-  background-color: transparent;
-  border: none;
 }
 
 .button {
@@ -213,6 +210,89 @@
   mix-blend-mode: difference;
 }
 
+/* heart button */
+.card__icon-button {
+  border: 2px solid transparent;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--color-primary);
+}
+
+.core {
+  fill: transparent;
+  transition: fill 0.3s linear 0.03s;
+}
+
+.main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.contour {
+  fill: var(--color-primary);
+  transition: fill 0.1s linear;
+}
+
+.sparks {
+  fill: var(--animation-fill-color);
+  opacity: 0;
+}
+
+/* heart button hover */
+.like-icon:hover .core {
+  fill: var(--color-primary);
+  transition-delay: 0s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--color-primary);
+  transition-delay: 0.05s;
+}
+
+/* heart button active */
+.like-icon:active .core {
+  fill: var(--animation-fill-color);
+  transition-delay: 0s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.05s;
+}
+
+/* heart button is-liked */
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition-delay: 0s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s linear 0.06s;
+}
+
+/* heart button transform */
+.like-icon {
+  transform-origin: center;
+}
+
+/* footer */
 .footer {
   margin-block-start: 39px;
 }
