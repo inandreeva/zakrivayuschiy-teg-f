@@ -1,1 +1,1 @@
-https://github.com/inandreeva/ono-tebe-nado-fd
+https://github.com/inandreeva/zakrivayuschiy-teg-f
