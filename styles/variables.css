@@ -2,7 +2,7 @@
   --content-width: clamp(320px, 90vw, 700px);
 
   --font-primary: 'Inter', sans-serif;
-  --font-accent: 'Press Start';
+  --font-accent: 'Press Start', fantasy, sans-serif;
 
   --font-size-h1: clamp(49px, 6vw, 65px);
   --font-size-subtitles: clamp(0.875rem, 0.1719rem + 2.25vw, 1.4375rem);

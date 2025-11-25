@@ -35,9 +35,9 @@
 }
 
 .like-icon.is-liked .heart {
-  animation: heart-bump 0.3s ease-in 0.1s forwards;
+  animation: heart-bump 0.3s ease-in 0.1s;
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-burst 0.3s ease-in 0.3s forwards;
+  animation: sparks-burst 0.3s ease-in 0.3s;
 }
