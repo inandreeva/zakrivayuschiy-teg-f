@@ -1,11 +1,11 @@
-/* этот скрипт использует такие имена классов:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-Если эти классы поменять в HTML, скрипт перестанет работать. Будьте аккуратны.
+/* this script uses the following class names:
+✦ like-icon — for the animated heart svg icon
+✦ card__like-button — for the Like button next to the icon
+✦ card__icon-button — for the button wrapping the icon
+✦ card__icon-button — for the button wrapping the icon
+✦ is-liked — to denote the liked state of the heart icon
+✦ button__text — to denote the text element inside the button
+If these classes are changed in HTML, the script will stop working. Be careful.
 */
 
 const likeHeartArray = document.querySelectorAll('.like-icon');
